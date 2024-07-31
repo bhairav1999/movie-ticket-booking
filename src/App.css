@@ -1,0 +1,127 @@
+.navbar,
+.popup-overlay,
+.seat,
+.seats-grid,
+.seats-row {
+  display: flex;
+}
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 10px 20px;
+  margin: 0;
+}
+.logo img {
+  height: 50px;
+}
+.seats span {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.seats .booked {
+  background-color: red;
+  color: #fff;
+}
+.error {
+  color: red;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.seat-display {
+  margin: 20px 0;
+}
+.seats-container {
+  display: flex;
+  flex-direction: column;
+}
+.seats-row {
+  align-items: center;
+  margin-bottom: 10px;
+}
+.row-label {
+  width: 20px;
+  font-weight: 700;
+}
+.seats-grid {
+  gap: 10px;
+}
+.seat {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.available {
+  background-color: #d4edda;
+}
+.booked {
+  background-color: #f8d7da;
+  color: #721c24;
+  pointer-events: none;
+}
+.confirm-booking,
+.popup-button {
+  background-color: #ff6a00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+.popup-button:hover {
+  background-color: #ff6a00;
+}
+.popup-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.show-selector h2 {
+  font-size: 24px;
+  color: #333;
+}
+.show-select {
+  padding: 12px 63px;
+  font-size: 16px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s;
+}
+.show-select:focus,
+.show-select:hover {
+  border-color: #0056b3;
+  outline: 0;
+}
+
+h4{
+  margin: 15px 0;
+}
+h3{
+  margin: 10px 0;
+}
+
